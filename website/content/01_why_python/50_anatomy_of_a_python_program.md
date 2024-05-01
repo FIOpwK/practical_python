@@ -23,7 +23,7 @@ def create_query(languages, min_stars=50000):
     query = f"stars:>{min_stars} "
 
     for language in languages:
-        query += f"language:{language} "
+        query = f"language:{language} "
 
     # a sample query looks like: "stars:>50 language:python language:javascript"
     return query
